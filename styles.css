@@ -1,157 +1,45 @@
-/* General Styles */
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial, sans-serif';
     margin: 0;
     padding: 0;
-    color: #333;
     background-color: #f4f4f4;
+    color: #333;
 }
 
-a {
-    color: #3366cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Header Styles */
-header {
-    position: relative;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-
-header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 0;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.profile-container {
-    z-index: 1;
-}
-
-.profile-container img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.profile-container h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.profile-container p {
-    font-size: 1.2em;
-    font-style: italic;
-}
-
-/* Content Sections */
 .content-section {
-    padding: 50px 20px;
-    background-color: white;
-    margin-bottom: 30px;
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .content-section h2 {
+    font-size: 2.5em;
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.content-section p, .content-section a, .content-section li {
-    font-size: 1.1em;
-    line-height: 1.7;
-}
-
-.content-section a.button-link {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
-    background-color: #3366cc;
-    color: white;
-    border-radius: 4px;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
-}
-
-.content-section a.button-link:hover {
-    background-color: #254c99;
-}
-
-.content-section ul.awards-list {
-    list-style: none;
-    padding: 0;
-}
-
-.content-section ul.awards-list li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.about-me-details {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.research-item, .publication-item {
     margin-bottom: 20px;
 }
 
-/* Footer Styles */
-footer {
-    text-align: center;
+/* Education Modules Styles */
+.education-modules, .experience-modules, .publication-modules, .award-modules {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education-module, .experience-module, .publication-module, .award-module {
+    flex: 1;
+    min-width: 300px;
     padding: 20px;
-    background-color: #333;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.education-module:hover, .experience-module:hover, .publication-module:hover, .award-module:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 
