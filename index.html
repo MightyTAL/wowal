@@ -3,136 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aoling TANG's Personal Website</title>
+    <title>Personal Website - Aoling Tang</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="home-section">
-        <div class="home-content">
-            <h1>Aoling TANG</h1>
-            <p class="quote">‘浮舟沧海 立马昆仑’<br>‘Sailing across the vast sea standing tall on the Kunlun Mountains’</p>
+    <!-- Header Section -->
+    <header style="background-image: url('path-to-your-background-image.jpg');">
+        <div class="overlay"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#more-about-me">More About Me</a></li>
+            </ul>
+        </nav>
+        <div class="profile-container">
+            <img src="path-to-your-profile-photo.jpg" alt="Profile Photo">
+            <h1>Aoling Tang</h1>
+            <p>“浮舟沧海 立马昆仑”<br>(Sailing across the vast sea, standing tall on the Kunlun Mountains)</p>
         </div>
-    </section>
+    </header>
 
     <!-- About Me Section -->
-    <section id="about" class="about-section">
-        <div class="about-container">
-            <img src="your-photo.jpg" alt="Aoling TANG" class="profile-photo">
-            <div class="about-content">
-                <h2>About Me</h2>
-                <p>Hi! My name is Aoling TANG, a postgraduate student majoring in economics at Beihang University, China. I’m very happy to meet you here!</p>
-                <p>My research interests include innovation, environmental sustainability, organizations, corporate governance, and corporate social responsibility.</p>
-                <a href="https://drive.google.com/file/d/1MyAbioFwDVHQhoy_vqNKt9wUCiodXTsL/view?usp=share_link" target="_blank" class="cv-link">View My CV</a>
-            </div>
-        </div>
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hi! My name is Aoling TANG, a postgraduate student majoring in economics at Beihang University, China. I’m very happy to meet you here!</p>
+        <p>My research interest is in innovation, environment sustainability, organizations, corporate governance, and corporate social responsibility.</p>
+        <a href="https://drive.google.com/file/d/1MyAbioFwDVHQhoy_vqNKt9wUCiodXTsL/view?usp=share_lin" target="_blank">View My CV</a>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="education-section">
+    <section id="education">
         <h2>Education</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Beihang University, CHINA</h3>
-                <p>Master in Economics (09/2023-Present) GPA: 3.86/4.0</p>
-            </div>
-            <div class="timeline-item">
-                <h3>Beihang University, CHINA</h3>
-                <p>Bachelor of Economics (09/2019-06/2023) GPA: 3.82/4.0</p>
-            </div>
-        </div>
+        <p><strong>Beihang University, China</strong><br>
+           Master in Economics (09/2023-Present)<br>
+           GPA: 3.86/4.0<br>
+           Main Courses: Advanced Microeconomics (97), Advanced Macroeconomics (98)<br>
+           IELTS: 7 | GRE: 324
+        </p>
+        <p><strong>Beihang University, China</strong><br>
+           Bachelor of Economics (09/2019-06/2023)<br>
+           GPA: 3.82/4.0<br>
+           Average score: 91
+        </p>
     </section>
 
-    <!-- Research Section -->
-    <section id="research" class="research-section">
-        <h2>Research</h2>
-        <div class="tabs">
-            <div class="tab">
-                <input type="checkbox" id="research-proposal">
-                <label for="research-proposal">Research Proposal</label>
-                <div class="tab-content">
-                    <p>In order to address the shortcomings of previous research, this research proposal adopts the perspective of dynamic capability theory and proposes a theoretical model...</p>
-                    <a href="https://drive.google.com/file/d/14b9DNDL5TTIECZZ73oHYkjEwAtSKbRw_/view?usp=share_link" target="_blank">View Research Proposal</a><br>
-                    <a href="https://docs.google.com/presentation/d/1xWeIpuT4AUfXbUePcwKfG12AlREksRVX/edit?usp=share_link&ouid=116177230621965205698&rtpof=true&sd=true" target="_blank">View Research Proposal Presentation</a>
-                </div>
-            </div>
-            <div class="tab">
-                <input type="checkbox" id="research-experience">
-                <label for="research-experience">Research Experience</label>
-                <div class="tab-content">
-                    <ul>
-                        <li><strong>2021-2022</strong>: Beijing Social Science Fund Decision Consulting Key Project...</li>
-                        <li><strong>2021-2022</strong>: Planning Key Project...</li>
-                        <li><strong>2021</strong>: Shenzhen Science and Technology Plan Project 2021 Soft Science Project...</li>
-                        <li><strong>2023</strong>: Textbook on Financial Technology...</li>
-                        <li><strong>2023-2024</strong>: Monograph on Regional Innovation Ecosystem...</li>
-                        <li><strong>2024</strong>: Taking charge of a soft subject of Ministry of Industry and Information Technology...</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="tab">
-                <input type="checkbox" id="published-papers">
-                <label for="published-papers">Published Papers</label>
-                <div class="tab-content">
-                    <ul>
-                        <li><a href="https://drive.google.com/file/d/1mSZXs6TpGcA7P0VDK5ku_mhQSi_j5B4r/view?usp=share_link" target="_blank">The impact of integration of industry and finance on green total factor productivity of enterprises</a></li>
-                        <li><a href="https://drive.google.com/file/d/177Lqlb35UdxbgcnCZy0UkPLXpP8QultB/view?usp=share_link" target="_blank">Comparative Study on Technology Transfer Efficiency of Beijing, Shanghai, and Shenzhen Based on DEA Model</a></li>
-                        <!-- Add more papers here -->
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <!-- Research Proposal Section -->
+    <section id="research">
+        <h2>Research Proposal</h2>
+        <p>In order to address the shortcomings of previous research, this research proposal adopts the perspective of dynamic capability theory and proposes a theoretical model. The aim is to explore the impact of DDI on environmental performance in enterprises as well as reveal the mediating role of green innovation and the moderating role of environmental responsibility.</p>
+        <p><a href="https://drive.google.com/file/d/14b9DNDL5TTIECZZ73oHYkjEwAtSKbRw_/view?usp=share_link" target="_blank">View Full Research Proposal</a></p>
+        <p><a href="https://docs.google.com/presentation/d/1xWeIpuT4AUfXbUePcwKfG12AlREksRVX/edit?usp=share_link" target="_blank">View Research Presentation</a></p>
+    </section>
+
+    <!-- Research Experience Section -->
+    <section id="research-experience">
+        <h2>Research Experience</h2>
+        <!-- Add your research experiences here as you provided -->
+    </section>
+
+    <!-- Published Papers Section -->
+    <section id="publications">
+        <h2>Published Papers and Course Papers</h2>
+        <!-- List your papers with corresponding links -->
     </section>
 
     <!-- Awards Section -->
-    <section id="awards" class="awards-section">
+    <section id="awards">
         <h2>Awards</h2>
-        <div class="awards-grid">
-            <div class="award-item">
-                <h3>2020</h3>
-                <p>Scholarship of Academic Excellence</p>
-            </div>
-            <div class="award-item">
-                <h3>2021</h3>
-                <p>Scholarship of Academic Excellence</p>
-            </div>
-            <div class="award-item">
-                <h3>2021</h3>
-                <p>Scholarship of Social Practice</p>
-            </div>
-            <div class="award-item">
-                <h3>2022</h3>
-                <p>Scholarship of Academic Excellence</p>
-            </div>
-            <div class="award-item">
-                <h3>2023</h3>
-                <p>Outstanding Graduate</p>
-            </div>
-            <div class="award-item">
-                <h3>2023</h3>
-                <p>Freshman Scholarship (Top 4%)</p>
-            </div>
-        </div>
+        <!-- List your awards -->
     </section>
 
-    <!-- Contact Me Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <form action="#" method="post" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message
+    <!-- More About Me Section -->
+    <section id="more-about-me">
+        <h2>More About Me</h2>
+        <!-- Add the content about your skills and qualities -->
+    </section>
+
+</body>
+</html>
