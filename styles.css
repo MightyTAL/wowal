@@ -52,6 +52,12 @@ body {
     background: white;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chanel-section:hover {
+    transform: scale(1.02); /* 模块整体悬停时稍微放大 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .chanel-section h2 {
@@ -73,13 +79,21 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.education-item:hover, .rp-grid:hover, .experience-item:hover, .publication-item:hover, .award-item:hover, .more-about-me-item:hover {
+    transform: scale(1.03); /* 模块悬停时放大 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 增加阴影效果 */
+}
+
+/* Awards Grid Styles */
 .awards-grid p {
     margin: 0;
     text-align: center;
 }
 
+/* More About Me Styles */
 .more-about-me-item h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
@@ -93,12 +107,13 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
     text-align: center;
 }
 
 .btn:hover {
     background: #444;
+    transform: scale(1.05); /* 按钮悬停时放大 */
 }
 
 /* Photo Grid Styles */
