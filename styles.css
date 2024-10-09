@@ -120,4 +120,20 @@ body {
         flex-direction: column;
         gap: 10px;
     }
+    .hobby-section {
+    margin-bottom: 50px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 }
