@@ -62,11 +62,43 @@ body {
 }
 
 /* Grid Styles */
-.education-grid, .photo-grid, .more-about-me-grid {
+.education-grid, .rp-grid, .experience-grid, .publications-grid, .awards-grid, .more-about-me-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
+.education-item, .rp-grid, .experience-item, .publication-item, .award-item, .more-about-me-item {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.awards-grid p {
+    margin: 0;
+    text-align: center;
+}
+
+.more-about-me-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #444;
+}
+
 
 .photo-grid img {
     max-width: 100%;
@@ -109,5 +141,24 @@ body {
     .module {
         max-width: 80%;
         margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .chanel-header {
+        padding: 30px 0;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .chanel-section {
+        padding: 30px;
+    }
+
+    .chanel-nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
