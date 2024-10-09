@@ -136,32 +136,57 @@ body {
     height: auto;
     border-radius: 8px;
 }
-/* 动画效果 */
-.hobby-section {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* General Module Styles */
+.module {
     margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hobby-section:hover {
-    transform: scale(1.05); /* 鼠标悬停时放大 */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* 增加阴影效果 */
+.module:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Photo Grid Styles */
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 更好地控制图片大小 */
+    gap: 15px;
     margin-bottom: 20px;
 }
 
 .photo-grid img {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease; /* 添加图片缩放动画 */
+    border-radius: 10px;
+    object-fit: cover; /* 保持图片比例 */
+    transition: transform 0.3s ease;
 }
 
 .photo-grid img:hover {
-    transform: scale(1.1); /* 图片放大 */
+    transform: scale(1.05); /* 图片悬停时放大 */
+}
+
+/* Module Content Styles */
+.module-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .module-content {
+        flex-direction: column;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
 }
 }
