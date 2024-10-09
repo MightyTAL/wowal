@@ -136,4 +136,32 @@ body {
     height: auto;
     border-radius: 8px;
 }
+/* 动画效果 */
+.hobby-section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.hobby-section:hover {
+    transform: scale(1.05); /* 鼠标悬停时放大 */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* 增加阴影效果 */
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* 添加图片缩放动画 */
+}
+
+.photo-grid img:hover {
+    transform: scale(1.1); /* 图片放大 */
+}
 }
